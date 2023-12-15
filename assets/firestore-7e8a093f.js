@@ -1,4 +1,4 @@
-import{r as t,i as e}from"./makeStyle-2de5b8bd.js";import{j as n,an as r}from"./vendor-6f257c0b.js";var s={},i=e;Object.defineProperty(s,"__esModule",{value:!0});var o=s.default=void 0,a=n,c=(0,i(t()).default)((0,a.jsx)("path",{d:"M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"}),"Close");o=s.default=c;
+import{r as t,i as e}from"./makeStyle-e38f8f6b.js";import{j as n,an as r}from"./vendor-7622ee6b.js";var s={},i=e;Object.defineProperty(s,"__esModule",{value:!0});var o=s.default=void 0,a=n,c=(0,i(t()).default)((0,a.jsx)("path",{d:"M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"}),"Close");o=s.default=c;
 /**
  * @license
  * Copyright 2017 Google LLC
