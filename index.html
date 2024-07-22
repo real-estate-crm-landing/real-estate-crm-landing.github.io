@@ -150,5 +150,46 @@
     </script>
     <noscript><div><img src="https://mc.yandex.ru/watch/97863861" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11198362156"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-11198362156');
+    </script>
+    <script>
+      function gtag_report_conversion() {
+        var callback = function () {
+          console.log(arguments);
+        };
+        gtag('event', 'conversion', {
+          'send_to': 'AW-11198362156/yF5HCK7Q38MZEKzk5dsp',
+          'event_callback': callback
+        });
+        return false;
+      }
+      const main = () => {
+        const USED_CLASS = 'real-estate__gtagOnclickSubscribed';
+        const observer = new MutationObserver(() => {
+          const expandButtons = [...document.querySelectorAll('.MuiButtonBase-root')]
+          for (const button of expandButtons) {
+            if (button.innerText !== 'ЗАКАЗАТЬ ЗВОНОК') {
+              continue;
+            }
+            if (!button.classList.contains(USED_CLASS)) {
+              button.classList.add(USED_CLASS);
+              button.addEventListener('click', gtag_report_conversion)
+            }
+          }
+        });
+        observer.observe(document.body, {
+          childList: true,
+          subtree: true,
+        });
+      };
+      document.addEventListener('DOMContentLoaded', main);
+    </script>
+    <!-- Google tag (gtag.js) -->
   </body>
 </html>
